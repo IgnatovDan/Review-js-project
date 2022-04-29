@@ -15,6 +15,12 @@ class Component {
 		*/
 		const createNewTag = document.createElement(`div`);
 		createNewTag.innerHTML = template;
+
+		/*
+		Не понятно почему возвращается 'firstChild' а не значение 'createNewTag'
+		Можно лучше: добавлять комментарии по такому выбору решений.
+		*/
+
 		return createNewTag.firstChild;
 	}
 

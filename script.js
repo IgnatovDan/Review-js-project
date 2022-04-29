@@ -1,3 +1,10 @@
+/*
+В файле используются разные отступы: 2 или 4 пробела.
+Это мешает в совместной работе и появляются изменения "только для форматирования"
+Можно лучше: сделать автоматическое форматирование документов при сохранении.
+См https://stackoverflow.com/questions/39494277/how-do-you-format-code-on-save-in-vs-code
++ https://www.robinwieruch.de/how-to-use-prettier-vscode
+*/
 window.onload = () => {
     const FORM_WRAPPER = document.querySelector(`.column_type_input`);
     const ratingArray = [];

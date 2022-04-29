@@ -29,7 +29,7 @@ class Person extends Component {
     /*
     Функции hasCat/hasRest/hasMoney возвращают результат, но он не используется.
     Можно лучше: возвращать результат только когда вызывающий код его использует
-    См https://ru.wikipedia.org/wiki/YAGNI
+    См https://ru.wikipedia.org/wiki/YAGNI + https://habr.com/ru/company/itelma/blog/546372/
     */
     hasCat() {
         /*

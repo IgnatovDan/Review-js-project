@@ -5,6 +5,21 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 	<link rel="stylesheet" href="style.css">
+	<!--
+		Отлично: использован атрибут defer который позволяет одновременную загрузку/парсинг HTML и JS кода
+	-->
+	<!--
+		defer - это boolean атрибут и для него не нужно указывать значение
+		Надо изменить: указать только defer без значения
+		См https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer
+	-->
+	<!--
+		Контент index.html будет сразу отрендерен браузером и виден пользователю 
+        даже если браузер еще не загрузил скрипты (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer).
+        Но для пользователя работа страницы построена на DOM элементах, которые добавляются в скриптах и страница 
+		будет выглядеть сломаной/нерабочей пока не загрузятся все скрипты.
+        Можно лучше: в разметке сделать элемент Loading и в скрипте скрывать его и показывать "рабочий" контент страницы
+	-->
 	<script defer="defer" src="utils/mock.js"></script>
 	<script defer="defer" src="utils/enums.js"></script>
 	<script defer="defer" src="utils/utils-functions.js"></script>

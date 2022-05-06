@@ -5,6 +5,11 @@
 См https://stackoverflow.com/questions/39494277/how-do-you-format-code-on-save-in-vs-code
 + https://www.robinwieruch.de/how-to-use-prettier-vscode
 */
+/*
+Можно лучше: для загрузки файла использован атрибут defer и можно не использовать событие "window.onload"
+См https://flaviocopes.com/javascript-async-defer/ 
++ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies
+*/
 window.onload = () => {
     const FORM_WRAPPER = document.querySelector(`.column_type_input`);
     const ratingArray = [];
